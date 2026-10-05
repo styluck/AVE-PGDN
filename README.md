@@ -1,12 +1,11 @@
 ﻿# GAVE-PGDN
 
-Minimal MATLAB implementation of projected gradient descent with adaptive Newton refinement for the generalized absolute value equation
+MATLAB implementation of projected gradient descent with adaptive Newton refinement for the generalized absolute value equation
 
 ```text
 A*x - B*abs(x) = b
 ```
 
-This package contains the solver copied unchanged from the current research code and one small synthetic example. It does not contain the paper's benchmark experiments, datasets, plots, or saved results. The demo illustrates usage rather than reproducing the numerical study in the paper.
 
 ## Quick start
 
@@ -16,11 +15,7 @@ Open MATLAB in this directory and run:
 run('demo.m')
 ```
 
-Alternatively, run the demo by its absolute path. The demo sets up and restores the MATLAB search path automatically, uses a fixed random seed, and prints iteration count, relative residual, solution error, and accepted Newton refinements. It creates no output files. The matrix A is positive definite with minimum eigenvalue 2 and B = 0.2*I; the right-hand side is constructed from a known solution.
-
-## Requirements
-
-MATLAB; no additional toolboxes or third-party code are required. Validation details are in VALIDATION.md. The rectangular Newton branch uses the built-in function `lsqminnorm`; use a MATLAB version providing that function when solving rectangular problems.
+The matrix A is positive definite with minimum eigenvalue 2 and B = 0.2*I; the right-hand side is constructed from a known solution.
 
 ## Solver usage
 
@@ -60,4 +55,12 @@ Termination flags: 0 = iteration limit; 1 = residual tolerance met; 2 = small pr
 
 ## Paper and license
 
-Before public release, add the final paper title, author list, and citation/link here. A distribution license has not yet been selected; no license grant is supplied by this package. Add the copyright holder's approved LICENSE before publishing as licensed open-source software.
+Please cite this paper: 
+
+A Safeguarded Projected-Gradient Framework for Complementarity Constrained Least Squares Problems
+
+Author: Lianghai Xiao, Wei Zhang, Jiayi Zhong
+
+https://arxiv.org/abs/2607.20786
+
+
