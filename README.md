@@ -51,7 +51,6 @@ Termination flags: 0 = iteration limit; 1 = residual tolerance met; 2 = small pr
 
 - `algos/solve_gave_pgd_newton.m`: self-contained GAVE solver, including local helper functions.
 - `demo.m`: fixed-seed, small square GAVE example with a known solution.
-- `VALIDATION.md`: checks performed on this package.
 
 ## Paper and license
 
